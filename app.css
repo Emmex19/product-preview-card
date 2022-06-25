@@ -1,0 +1,150 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cont {
+    width: 50%;
+}
+
+.pic img {
+    border-radius: 10px 0px 0px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgmobile {
+    display: none;
+}
+
+.description {
+    padding: 0px 30px;
+}
+
+.product {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    padding: 20px 0px;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 25px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    width: 80%;
+    background-color: hsl(228, 12%, 48%);
+    padding: 5px;
+    margin-left: 26px;
+}
+
+img.iconcart {
+    padding-right: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-bottom: 20px;
+}
+
+.reduced {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+.real {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;
+    }
+
+    .pic img {
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 20px;
+    }
+
+    .imgdesktop {
+        display: none;
+    }
+
+    .imgmobile {
+        display: inline;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .price {
+        padding-right: 100px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        padding-bottom: 25px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
